@@ -35,15 +35,17 @@
   <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
 
   <link rel="stylesheet" type="text/css" href="style.css"/>
-
+  <!-- html2canvas CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
 </head>
 <body>
   <div id="GameDiv" cc_exact_fit_screen="true">
+    <div id="gameContainer"> <!-- новый контейнер для html2canvas -->
       <div id="Cocos3dGameContainer">
         <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="99"></canvas>
       </div>
     </div>
-  
+  </div>  
 
 <!-- Polyfills bundle. -->
 
